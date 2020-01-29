@@ -1,6 +1,7 @@
 # Introduction
 
-This is  a demo project for the opal webui and opal webservices. 
+This repository provides the OPAL demonstrator, consisting of the [Web UI](https://github.com/projekt-opal/web-ui) and [Webservices](https://github.com/projekt-opal/opal-webservices). 
+
 
 # How to run
 
@@ -15,4 +16,11 @@ Then, by running the command
 ```
 docker-compose up -d
 ```
-You have the demo containers running and it is available on the port 3000 (you can set any port that you want in the docker-compose.yml) of your server.
+you have the demo containers running and the demo is available on port 3000 (you can set any port that you want in the docker-compose.yml) of your server.
+
+
+## Credits
+
+[Data Science Group (DICE)](https://dice-research.org/) at [Paderborn University](https://www.uni-paderborn.de/)
+
+This work has been supported by the German Federal Ministry of Transport and Digital Infrastructure (BMVI) in the project [Open Data Portal Germany (OPAL)](http://projekt-opal.de/) (funding code 19F2028A).
