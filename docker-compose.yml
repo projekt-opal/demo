@@ -1,0 +1,24 @@
+version: "2.4"
+
+services:
+  frontend:
+    container_name: frontend
+    ports:
+      - 3000:3000
+    build: frontend/
+    volumes:
+      - modules:/usr/src/app/node_modules
+      - next:/usr/src/app/.next
+  backend:
+    container_name: backend
+    build: backend/
+    ports:
+    - 8081:8081
+    environment:
+      - OPAL_TRIPLESTORE_URL=${OPAL_TRIPLESTORE_URL}
+      - OPAL_TRIPLESTORE_USERNAME=${OPAL_TRIPLESTORE_USERNAME}
+      - OPAL_TRIPLESTORE_PASSWORD=${OPAL_TRIPLESTORE_PASSWORD}
+
+volumes:
+  modules:
+  next:
