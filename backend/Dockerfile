@@ -1,7 +1,7 @@
 FROM maven:3-jdk-8 AS builder
-RUN wget https://github.com/projekt-opal/opal-webservices/archive/1.0.0.tar.gz \
-    && tar -xzf 1.0.0.tar.gz
-WORKDIR opal-webservices-1.0.0
+RUN wget https://github.com/projekt-opal/web-service/archive/2.0.0.tar.gz \
+    && tar -xzf 2.0.0.tar.gz
+WORKDIR web-service-2.0.0
 RUN mvn clean package \
     && mv target/webservice-*.jar /webservice.jar
 

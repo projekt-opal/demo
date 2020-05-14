@@ -1,12 +1,13 @@
 FROM node:13.3.0
 
 
-RUN wget https://github.com/projekt-opal/web-ui/archive/1.0.0.tar.gz && \
-tar -xzf 1.0.0.tar.gz
+RUN wget https://github.com/projekt-opal/web-ui/archive/2.0.0.tar.gz && \
+tar -xzf 2.0.0.tar.gz
 
 # Setting working directory. All the path will be relative to WORKDIR
-WORKDIR web-ui-1.0.0
+WORKDIR web-ui-2.0.0
 
+ARG BACKEND_ADDRESS
 
 #set the backend address
 RUN sed -i 's@^    baseURL:.*@    baseURL:'\'"$BACKEND_ADDRESS"\''@' webservice/axios-dataSets.js
