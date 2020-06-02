@@ -7,10 +7,10 @@ This repository provides the OPAL demonstrator, consisting of the [Web UI](https
 
 To be able to run you must provide a .env file in the root folder of the project that is similar to
 ```
-BACKEND_ADDRESS=http://localhost:8081/
-OPAL_TRIPLESTORE_URL=localhost
-OPAL_TRIPLESTORE_USERNAME=xxxx
-OPAL_TRIPLESTORE_PASSWORD=xxxx
+BACKEND_ADDRESS=http://yourserver:8081/
+ES_INDEX=opal_may
+OPAL_ELASTICSEARCH_URL=opaldata.cs.upb.de
+OPAL_ELASTICSEARCH_PORT=9200
 ```
 Then, by running the command 
 ```
