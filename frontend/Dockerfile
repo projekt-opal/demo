@@ -1,11 +1,11 @@
 FROM node:13.3.0
 
 
-RUN wget https://github.com/projekt-opal/web-ui/archive/2.0.0.tar.gz && \
-tar -xzf 2.0.0.tar.gz
+RUN wget https://github.com/projekt-opal/web-ui/archive/2.0.1.tar.gz && \
+tar -xzf 2.0.1.tar.gz
 
 # Setting working directory. All the path will be relative to WORKDIR
-WORKDIR web-ui-2.0.0
+WORKDIR web-ui-2.0.1
 
 ARG BACKEND_ADDRESS
 
